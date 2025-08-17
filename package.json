@@ -1,88 +1,36 @@
 {
-  "name": "embedded-portfolio",
+  "name": "vite_react_shadcn_ts",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "format": "prettier --write .",
-    "deploy": "gh-pages -d dist",
-    "prepare": "husky install"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    // Core
+    "@radix-ui/react-dialog": "^1.1.14",
+    "@tailwindcss/typography": "^0.5.16",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.539.0",
+    "next-themes": "^0.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.30.1",
-    
-    // UI Components
-    "@radix-ui/react-dialog": "^1.1.14",
-    "@radix-ui/react-dropdown-menu": "^2.1.15",
-    "@radix-ui/react-slot": "^1.2.3",
-    "@radix-ui/react-tooltip": "^1.2.7",
-    "lucide-react": "^0.539.0",
-    
-    // Animation
-    "framer-motion": "^12.23.12",
-    "react-intersection-observer": "^9.5.2",
-    
-    // Forms
-    "react-hook-form": "^7.61.1",
-    "zod": "^3.25.76",
-    "@hookform/resolvers": "^3.10.0",
-    
-    // Theme
-    "next-themes": "^0.3.0",
-    
-    // Embedded-specific
-    "react-syntax-highlighter": "^15.5.0",
-    "react-icons": "^5.2.1",
-    
-    // Utilities
-    "clsx": "^2.1.1",
     "tailwind-merge": "^2.6.0",
-    "date-fns": "^3.6.0"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    // Core
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react-swc": "^3.11.0",
-    "typescript": "^5.8.3",
-    "vite": "^7.1.2",
-    
-    // Styling
     "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17",
-    "tailwindcss-animate": "^1.0.7",
-    "@tailwindcss/typography": "^0.5.16",
-    
-    // Linting
-    "@typescript-eslint/eslint-plugin": "^8.38.0",
-    "@typescript-eslint/parser": "^8.38.0",
-    "eslint": "^9.32.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "prettier": "^3.3.2",
-    
-    // Deployment
-    "gh-pages": "^6.3.0",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.2"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{css,scss}": [
-      "prettier --write"
-    ]
+    "typescript": "^5.8.3",
+    "vite": "^7.1.2"
   }
 }

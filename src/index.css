@@ -13,11 +13,11 @@
     --foreground: 222 47% 11%;
     
     /* Embedded Systems Brand Colors */
-    --primary: 195 48% 45%;      /* Professional blue */
+    --primary: 195 48% 45%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 162 36% 48%; /* Teal accent */
-    --primary-dark: 210 100% 25%; /* Dark blue */
-    --accent: 13 95% 64%;        /* Orange for highlights */
+    --primary-light: 162 36% 48%;
+    --primary-dark: 210 100% 25%;
+    --accent: 13 95% 64%;
     --accent-foreground: 0 0% 100%;
     
     /* Surface colors */
@@ -27,24 +27,14 @@
     --surface-foreground: 222 25% 25%;
     
     /* Technical colors */
-    --circuit: 210 40% 96%;      /* Light blue for circuit backgrounds */
-    --pcb: 120 30% 90%;          /* Light green for PCB elements */
-    --sensor: 350 89% 60%;       /* Red for sensor indicators */
+    --circuit: 210 40% 96%;
+    --pcb: 120 30% 90%;
+    --sensor: 350 89% 60%;
     
     /* Borders and inputs */
     --border: 214 32% 91%;
     --input: 214 32% 91%;
     --ring: 195 48% 45%;
-    
-    /* Gradients */
-    --gradient-tech: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
-    --gradient-circuit: linear-gradient(135deg, hsl(var(--circuit)), hsl(var(--pcb)));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--surface)));
-    
-    /* Shadows */
-    --shadow-tech: 0 4px 6px -1px hsl(var(--primary) / 0.1);
-    --shadow-card: 0 2px 8px hsl(var(--primary) / 0.1);
-    --shadow-glow: 0 0 20px hsl(var(--primary) / 0.2);
     
     /* Animation */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -63,9 +53,7 @@
     --border: 217 33% 17%;
     --surface: 222 47% 15%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
@@ -81,186 +69,44 @@
     @apply font-semibold tracking-tight;
   }
   
-  /* Selection styling */
   ::selection {
     @apply bg-primary text-primary-foreground;
   }
 }
 
 @layer components {
-  /* ========== HERO SECTION ========== */
+  /* HERO SECTION */
   .hero {
     @apply relative min-h-[90vh] flex items-center justify-center overflow-hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
-                var(--gradient-tech);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
   }
   
-  .hero-content {
-    @apply relative z-10 text-center px-4 py-20 max-w-4xl mx-auto;
-  }
-  
-  .hero-title {
-    @apply text-4xl md:text-6xl font-bold mb-6 text-white;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  }
-  
-  .hero-subtitle {
-    @apply text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto;
-  }
-  
-  /* ========== TECHNICAL COMPONENTS ========== */
+  /* TECHNICAL COMPONENTS */
   .tech-card {
-    @apply bg-surface p-6 rounded-lg shadow-card transition-transform duration-300;
-    border: 1px solid hsl(var(--border));
+    @apply bg-surface p-6 rounded-lg shadow-md transition-transform duration-300 border;
+    border-color: hsl(var(--border));
   }
   
-  .tech-card:hover {
-    @apply shadow-glow transform -translate-y-1;
-  }
-  
-  .circuit-bg {
-    background-image: 
-      radial-gradient(circle at 25% 25%, hsl(var(--circuit)) 0%, transparent 20%),
-      linear-gradient(135deg, hsl(var(--surface)), hsl(var(--background)));
-  }
-  
-  .pcb-track {
-    @apply relative;
-  }
-  
-  .pcb-track::after {
-    @apply absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary to-accent;
-    content: '';
-  }
-  
-  /* ========== BUTTONS ========== */
+  /* BUTTONS */
   .btn-primary {
     @apply px-6 py-3 rounded-lg font-medium transition-all;
-    background: var(--gradient-tech);
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
     color: hsl(var(--primary-foreground));
-  }
-  
-  .btn-primary:hover {
-    @apply shadow-glow transform -translate-y-0.5;
-  }
-  
-  .btn-outline {
-    @apply px-6 py-3 rounded-lg font-medium border border-primary text-primary transition-all;
-  }
-  
-  .btn-outline:hover {
-    @apply bg-primary/10 shadow-sm;
-  }
-  
-  /* ========== PROJECT CARDS ========== */
-  .project-card {
-    @apply tech-card overflow-hidden;
-  }
-  
-  .project-card-header {
-    @apply relative h-48 overflow-hidden;
-  }
-  
-  .project-chip {
-    @apply inline-block px-3 py-1 text-xs font-medium rounded-full;
-    background: hsl(var(--accent) / 0.1);
-    color: hsl(var(--accent));
-  }
-  
-  /* ========== TECHNICAL SKILLS ========== */
-  .skill-pill {
-    @apply inline-flex items-center px-4 py-2 rounded-full text-sm font-medium;
-    background: hsl(var(--surface));
-    border: 1px solid hsl(var(--border));
-  }
-  
-  /* ========== ANIMATIONS ========== */
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-  }
-  
-  .floating {
-    animation: float 3s ease-in-out infinite;
-  }
-  
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
-  }
-  
-  .pulse {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  }
-  
-  /* ========== RESPONSIVE IMAGE ========== */
-  .responsive-img {
-    @apply w-full h-auto object-cover rounded-lg shadow-md;
-    max-width: 100%;
-  }
-  
-  /* ========== SECTION STYLES ========== */
-  .section {
-    @apply py-16 md:py-24;
-  }
-  
-  .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-12 text-center;
-    position: relative;
-  }
-  
-  .section-title::after {
-    @apply absolute bottom-0 left-1/2 w-20 h-1 bg-primary;
-    content: '';
-    transform: translateX(-50%) translateY(10px);
-  }
-  
-  /* ========== DARK MODE OVERRIDES ========== */
-  .dark .tech-card {
-    @apply bg-surface border-border;
-  }
-  
-  .dark .skill-pill {
-    @apply bg-surface border-border;
   }
 }
 
 @layer utilities {
-  /* Custom utilities */
   .text-balance {
     text-wrap: balance;
   }
   
-  .perspective-1000 {
-    perspective: 1000px;
-  }
-  
-  .preserve-3d {
-    transform-style: preserve-3d;
-  }
-  
-  /* Grid utilities */
   .grid-auto-fit {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-  
-  /* Debug borders */
-  .debug * {
-    outline: 1px solid red;
-  }
 }
 
-/* ========== MEDIA QUERIES ========== */
 @media (max-width: 768px) {
   .hero-title {
     @apply text-4xl;
-  }
-  
-  .hero-subtitle {
-    @apply text-lg;
-  }
-  
-  .section {
-    @apply py-12;
   }
 }
