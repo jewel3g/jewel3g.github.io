@@ -499,6 +499,24 @@
       color: var(--light);
     }
     
+    /* Company Logo Styles */
+    .company-header {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .company-logo {
+      width: 80px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 5px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
     /* Skills Grid */
     .skills-grid {
       display: grid;
@@ -777,6 +795,16 @@
       .home-section {
         padding: 5rem 2rem;
       }
+      
+      .company-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      
+      .company-logo {
+        width: 60px;
+      }
     }
   </style>
 </head>
@@ -870,58 +898,75 @@
       </div>
     </div>
   </section>
-<!-- Experience Section -->
-<section id="sectionExperience" class="home-section">
-  <div class="section-heading">
-    <h1>Work Experience</h1>
-    <hr>
-  </div>
-  <div class="containerzz">
-    <div id="work-experience" class="card-container">
-      <!-- Vectoflow GmbH Role -->
-      <div class="card" data-aos="fade-up">
-        <h3 class="card-title">Electronics Development Engineer</h3>
-        <p class="card-text"><strong>Company:</strong> Vectoflow GmbH – Gilching, Germany</p>
-        <p class="card-text"><strong>Duration:</strong> April 2024--May 2025</p>
-        <p class="card-text"><strong>Responsibilities:</strong></p>
-        <ul class="card-text">
-          <li>Designed and developed aerospace/industrial electronic components, ensuring compliance with <strong>DO-160</strong> and <strong>MIL</strong> standards.</li>
-          <li>Conducted EMC testing per <strong>CISPER</strong>/ICE standards and validated hardware performance.</li>
-          <li>Troubleshot hardware/firmware issues, improving product reliability by [X% if quantifiable].</li>
-          <li>Supported firmware integration, design reviews, and process optimizations.</li>
-        </ul>
-      </div>
 
-      <!-- Solarnative GmbH Role -->
-      <div class="card" data-aos="fade-up" data-aos-delay="200">
-        <h3 class="card-title">Embedded Systems Developer</h3>
-        <p class="card-text"><strong>Company:</strong> Solarnative GmbH – Lohfelden, Germany</p>
-        <p class="card-text"><strong>Duration:</strong> Mar 2023--Feb 2024</p>
-        <p class="card-text"><strong>Responsibilities:</strong></p>
-        <ul class="card-text">
-          <li>Developed microcontroller firmware (STM32/AVR) for micro-inverter functionality and wireless comms (LTE/LoRa).</li>
-          <li>Designed electronic circuits and PCB layouts (high-efficiency power electronics).</li>
-          <li>Performed hardware validation using lab equipment (oscilloscopes, spectrum analyzers).</li>
-          <li>Created technical documentation for hardware/software systems.</li>
-        </ul>
-      </div>
+  <!-- Experience Section -->
+  <section id="sectionExperience" class="home-section">
+    <div class="section-heading">
+      <h1>Work Experience</h1>
+      <hr>
+    </div>
+    <div class="containerzz">
+      <div id="work-experience" class="card-container">
+        <!-- Vectoflow GmbH Role -->
+        <div class="card" data-aos="fade-up">
+          <div class="company-header">
+            <img src="https://via.placeholder.com/80x40?text=Vectoflow" alt="Vectoflow GmbH" class="company-logo">
+            <div>
+              <h3 class="card-title">Electronics Development Engineer</h3>
+              <p class="card-text"><strong>Company:</strong> Vectoflow GmbH – Gilching, Germany</p>
+              <p class="card-text"><strong>Duration:</strong> April 2024--May 2025</p>
+            </div>
+          </div>
+          <p class="card-text"><strong>Responsibilities:</strong></p>
+          <ul class="card-text">
+            <li>Designed and developed aerospace/industrial electronic components, ensuring compliance with <strong>DO-160</strong> and <strong>MIL</strong> standards.</li>
+            <li>Conducted EMC testing per <strong>CISPER</strong>/ICE standards and validated hardware performance.</li>
+            <li>Troubleshot hardware/firmware issues, improving product reliability by [X% if quantifiable].</li>
+            <li>Supported firmware integration, design reviews, and process optimizations.</li>
+          </ul>
+        </div>
 
-      <!-- Code 19 Role -->
-      <div class="card" data-aos="fade-up" data-aos-delay="400">
-        <h3 class="card-title">IoT Engineer</h3>
-        <p class="card-text"><strong>Company:</strong> Code 19 – Dhaka, Bangladesh</p>
-        <p class="card-text"><strong>Duration:</strong>  Jan 2022--Aug 2022</p>
-        <p class="card-text"><strong>Responsibilities:</strong></p>
-        <ul class="card-text">
-          <li>Led full-cycle IoT product development (embedded systems, cloud infrastructure, data analytics).</li>
-          <li>Designed power electronics (AC/DC, DC/DC converters) and industrial IoT solutions.</li>
-          <li>Ensured compliance with IoT standards and protocols.</li>
-          <li>Prototyped and deployed scalable plug-and-play IoT devices.</li>
-        </ul>
+        <!-- Solarnative GmbH Role -->
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <div class="company-header">
+            <img src="https://via.placeholder.com/80x40?text=Solarnative" alt="Solarnative GmbH" class="company-logo">
+            <div>
+              <h3 class="card-title">Embedded Systems Developer</h3>
+              <p class="card-text"><strong>Company:</strong> Solarnative GmbH – Lohfelden, Germany</p>
+              <p class="card-text"><strong>Duration:</strong> Mar 2023--Feb 2024</p>
+            </div>
+          </div>
+          <p class="card-text"><strong>Responsibilities:</strong></p>
+          <ul class="card-text">
+            <li>Developed microcontroller firmware (STM32/AVR) for micro-inverter functionality and wireless comms (LTE/LoRa).</li>
+            <li>Designed electronic circuits and PCB layouts (high-efficiency power electronics).</li>
+            <li>Performed hardware validation using lab equipment (oscilloscopes, spectrum analyzers).</li>
+            <li>Created technical documentation for hardware/software systems.</li>
+          </ul>
+        </div>
+
+        <!-- Code 19 Role -->
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
+          <div class="company-header">
+            <img src="https://via.placeholder.com/80x40?text=Code19" alt="Code 19" class="company-logo">
+            <div>
+              <h3 class="card-title">IoT Engineer</h3>
+              <p class="card-text"><strong>Company:</strong> Code 19 – Dhaka, Bangladesh</p>
+              <p class="card-text"><strong>Duration:</strong> Jan 2022--Aug 2022</p>
+            </div>
+          </div>
+          <p class="card-text"><strong>Responsibilities:</strong></p>
+          <ul class="card-text">
+            <li>Led full-cycle IoT product development (embedded systems, cloud infrastructure, data analytics).</li>
+            <li>Designed power electronics (AC/DC, DC/DC converters) and industrial IoT solutions.</li>
+            <li>Ensured compliance with IoT standards and protocols.</li>
+            <li>Prototyped and deployed scalable plug-and-play IoT devices.</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
   <!-- Education Section -->
   <section id="sectionEducation" class="home-section">
     <div class="section-heading">
@@ -1176,7 +1221,6 @@
           <p class="certification-date">Issued: Sept 2019</p>
           <a href="https://raw.githubusercontent.com/jewel3g/jewel3g.github.io/main/public/certificate.png" class="certification-button" target="_blank">View Certificate</a>
         </div>
-         </div>
           <div class="certification-card" data-aos="fade-up" data-aos-delay="400">
           <img src="https://raw.githubusercontent.com/jewel3g/jewel3g.github.io/main/public/certificate.png" alt="IEEE Certification" class="certification-image">
           <h3 class="certification-name">Recognition of Prior Learning (RPL)</h3>
