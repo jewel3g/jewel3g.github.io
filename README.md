@@ -20,4 +20,3 @@ This repository showcases projects and professional work by MD Anaet Ullah, an E
 3. **IoT Smart Parking System**  
    - Custom PCB with RFID and cloud connectivity (Firebase).  
 
-## Repository Structure
