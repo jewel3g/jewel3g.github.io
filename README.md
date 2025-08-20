@@ -1,22 +1,66 @@
-# MD Anaet Ullah - Embedded Systems Engineer
+# MD Anaet Ullah – Electronics & Embedded Systems Engineer
 
-## Overview
-This repository showcases projects and professional work by MD Anaet Ullah, an Embedded Systems Engineer with expertise in microcontroller firmware, hardware design, and IoT solutions. The repository includes code samples, schematics, and documentation related to embedded systems development, power electronics, and compliance testing.
+[![GitHub followers](https://img.shields.io/github/followers/jewel3g?label=Follow&style=social)](https://github.com/jewel3g)
 
-## Professional Summary
-- **Experience**: 4+ years in embedded systems design, firmware development, and hardware validation.
-- **Skills**: Embedded C/C++, RTOS, PCB design (KiCAD/Altium), EMC/EMI testing, and IoT protocols (BLE/LoRa).
-- **Industries**: Aerospace, industrial electronics, renewable energy, and IoT.
+---
 
-## Key Projects
-1. **Reactive Power Correction for On-grid Inverter**  
-   - DSP-based closed-loop control for power factor >0.98.  
-   - Reduced line losses by 15%.  
+### 👋 About Me
 
-2. **High-Efficiency Power Circuit Design**  
-   - Buck/boost converters with >92% efficiency.  
-   - Improved thermal performance by 20% via PCB optimization.  
+I’m **Anaet**, an Electronics and Embedded Systems Engineer based in Germany with 4+ years of experience designing reliable hardware, firmware, and IoT solutions. I specialize in aerospace, industrial IoT, and power electronics, combining deep hardware expertise with robust embedded software development.
 
-3. **IoT Smart Parking System**  
-   - Custom PCB with RFID and cloud connectivity (Firebase).  
+---
 
+### 🚀 Skills & Technologies
+
+- **Embedded Systems:** C/C++ (bare-metal), RTOS, STM32, AVR, ESP32  
+- **Hardware Design:** PCB design (KiCAD, Altium), EMC/EMI testing, signal integrity  
+- **Wireless:** LoRa, LTE, BLE, MQTT, Firebase  
+- **Tools:** STM32CubeIDE, LTspice, Oscilloscope, Logic Analyzer, Spectrum Analyzer  
+- **Development:** Firmware architecture, debugging, validation, documentation
+
+---
+
+### 💼 Experience Highlights
+
+- **Electronics Development Engineer**  
+  *Vectoflow GmbH* — Designed aerospace and industrial electronics with EMC testing and firmware integration.  
+  *(Apr 2024 – May 2025, Gilching, Germany)*
+
+- **Embedded System Developer**  
+  *Solarnative GmbH* — Developed firmware for micro-inverters, LTE/LoRa communication interfaces, PCB design, and hardware validation.  
+  *(Mar 2023 – Feb 2024, Lohfelden, Germany)*
+
+- **IoT Engineer**  
+  *Code 19* — Led end-to-end IoT device development and compliance with IoT standards.  
+  *(Jan 2022 – Jul 2022, Dhaka, Bangladesh)*
+
+---
+
+### 📂 Selected Projects
+
+| Project                          | Description                                          | Repo Link                                         |
+|---------------------------------|------------------------------------------------------|--------------------------------------------------|
+| Reactive Power Correction        | DSP control for grid-tied inverter with PF > 0.98   | [GitHub](https://github.com/jewel3g/Reactive-Power-Correction) |
+| High-Efficiency Power Circuits  | DC-DC buck/boost converters with >92% efficiency    | [GitHub](https://github.com/jewel3g/High-Efficiency-Power-Circuits) |
+| Vector DAQ 2                    | 24-bit ADC data acquisition with anti-alias filters | [GitHub](https://github.com/jewel3g/Vector-DAQ2) |
+| IoT Smart Parking              | ESP8266 based parking system with Firebase/MQTT     | [GitHub](https://github.com/jewel3g/IoT-Smart-Parking) |
+| ESP32-C3 Utilities              | Firmware templates and diagnostic tools              | [GitHub](https://github.com/jewel3g/esp32-c3-utilities) |
+| Embedded Systems Resources      | Starter kits, checklists, and code snippets          | [GitHub](https://github.com/jewel3g/embedded-systems-resources) |
+
+---
+
+### 📫 Contact
+
+- Email: [anaetcpi@gmail.com](mailto:anaetcpi@gmail.com)  
+- GitHub: [github.com/jewel3g](https://github.com/jewel3g)  
+- LinkedIn: [linkedin.com/in/jewel3g](https://linkedin.com/in/jewel3g)  
+- Location: Offenbach am Main, Germany  
+
+---
+
+
+---
+
+<div align="center">
+  <sub>Built with ❤️ by MD Anaet Ullah</sub>
+</div>
