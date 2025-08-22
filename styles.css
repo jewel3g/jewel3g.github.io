@@ -1,22 +1,23 @@
-:root {
-  /* Color Palette */
-  --primary: #2A6B9C;
-  --primary-light: #4A8BBA;
-  --secondary: #1A4B76;
-  --accent: #5D7EA3;
-  --dark: #0A192F;
-  --dark-transparent: rgba(10, 25, 47, 0.95);
-  --light: #F5F9FC;
-  --light-transparent: rgba(245, 249, 252, 0.8);
-  --glass: rgba(255, 255, 255, 0.1);
-  --glass-border: rgba(255, 255, 255, 0.15);
+    :root {
+      /* Color Palette */
+      --primary: #2A6B9C;
+      --primary-light: #4A8BBA;
+      --secondary: #1A4B76;
+      --accent: #5D7EA3;
+      --dark: #0A192F;
+      --dark-transparent: rgba(10, 25, 47, 0.95);
+      --light: #F5F9FC;
+      --light-transparent: rgba(245, 249, 252, 0.8);
+      --glass: rgba(255, 255, 255, 0.1);
+      --glass-border: rgba(255, 255, 255, 0.15);
 
-  /* Transitions & Shadows */
-  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
- * {
+      /* Transitions & Shadows */
+      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -336,7 +337,7 @@
     }
     
     .card {
-    
+      background: #112240;
       padding: 2rem;
       border-radius: 10px;
       transition: transform 0.3s;
@@ -373,10 +374,11 @@
     }
     
     .skill-card {
-     /*       */ 
+      background: #112240;
       padding: 1.5rem;
       border-radius: 10px;
       transition: transform 0.3s;
+      border-bottom: 2px solid #64ffda;
     }
     
     .skill-card:hover {
@@ -420,6 +422,7 @@
       border-radius: 10px;
       overflow: hidden;
       transition: transform 0.3s;
+      border-bottom: 2px solid #64ffda;
     }
     
     .project-card:hover {
@@ -484,7 +487,7 @@
     .quoteComponent {
       padding: 5rem 2rem;
       text-align: center;
-     
+      background: #112240;
     }
     
     .zitat1 {
@@ -504,7 +507,7 @@
     
     /* Footer */
     footer {
-    
+      background: #112240;
       padding: 3rem 2rem;
       text-align: center;
     }
