@@ -7,21 +7,13 @@
   
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  
-  <!-- Font Awesome Icons -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  
-  <!-- AOS Animation Library -->
+  <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  
   <!-- Your CSS -->
   <link rel="stylesheet" href="styles.css" />
-
-  <style>
-    /* Additional styles for social media links, kept minimal here for clarity */
-    /* You can move these to your external CSS file for cleaner code */
-  </style>
-
+</head>
 <body>
   <!-- Particle Background -->
   <div id="particles-js"></div>
@@ -32,19 +24,19 @@
       <div class="logo">MD Anaet Ullah</div>
       <div class="navBar__menu">
         <ul>
-          <li><a href="#sectionHome">Home</a></li>
-          <li><a href="#sectionAbout">About</a></li>
-          <li><a href="#sectionExperience">Experience</a></li>
-          <li><a href="#sectionEducation">Education</a></li>
-          <li><a href="#sectionSkills">Skills</a></li>
-          <li><a href="#sectionProjects">Projects</a></li>
-          <li><a href="#sectionContact">Contact</a></li>
+          <li><a href="#sectionHome" data-translate="nav.home">Home</a></li>
+          <li><a href="#sectionAbout" data-translate="nav.about">About</a></li>
+          <li><a href="#sectionExperience" data-translate="nav.experience">Experience</a></li>
+          <li><a href="#sectionEducation" data-translate="nav.education">Education</a></li>
+          <li><a href="#sectionSkills" data-translate="nav.skills">Skills</a></li>
+          <li><a href="#sectionProjects" data-translate="nav.projects">Projects</a></li>
+          <li><a href="#sectionContact" data-translate="nav.contact">Contact</a></li>
           <li>
             <!-- Language Switcher -->
             <div class="language-selector">
               <button class="lang-btn active" data-lang="en">EN</button>
               <button class="lang-btn" data-lang="de">DE</button>
-               <button class="lang-btn" data-lang="de">BD</button>
+              <button class="lang-btn" data-lang="bd">BD</button>
             </div>
           </li>
         </ul>
@@ -88,11 +80,11 @@
     <!-- Hero Content -->
     <div class="hero-content">
       <h1>MD Anaet Ullah</h1>
-      <h2>Embedded Systems Engineer</h2>
-      <p>Passionate about creating innovative embedded solutions and IoT systems that bridge the gap between hardware and software.</p>
+      <h2 data-translate="hero.title">Embedded Systems Engineer</h2>
+      <p data-translate="hero.description">Passionate about creating innovative embedded solutions and IoT systems that bridge the gap between hardware and software.</p>
       <div class="cta-buttons">
-        <a href="#sectionContact" class="btn btn-primary">Get In Touch</a>
-        <a href="#sectionProjects" class="btn btn-secondary">View Projects</a>
+        <a href="#sectionContact" class="btn btn-primary" data-translate="hero.cta1">Get In Touch</a>
+        <a href="#sectionProjects" class="btn btn-secondary" data-translate="hero.cta2">View Projects</a>
       </div>
     </div>
     
@@ -100,39 +92,39 @@
     <div class="social-links">
       <a href="mailto:contact@example.com" class="social-link email" target="_blank">
         <i class="fas fa-envelope"></i>
-        <span class="tooltip">Email</span>
+        <span class="tooltip" data-translate="social.email">Email</span>
       </a>
       <a href="https://www.linkedin.com/in/jewel3g" class="social-link linkedin" target="_blank">
         <i class="fab fa-linkedin-in"></i>
-        <span class="tooltip">LinkedIn</span>
+        <span class="tooltip" data-translate="social.linkedin">LinkedIn</span>
       </a>
       <a href="https://github.com/jewel3g" class="social-link github" target="_blank">
         <i class="fab fa-github"></i>
-        <span class="tooltip">GitHub</span>
+        <span class="tooltip" data-translate="social.github">GitHub</span>
       </a>
       <a href="https://wa.me/4917631152823" class="social-link whatsapp" target="_blank">
         <i class="fab fa-whatsapp"></i>
-        <span class="tooltip">WhatsApp</span>
+        <span class="tooltip" data-translate="social.whatsapp">WhatsApp</span>
       </a>
       <a href="https://www.facebook.com/jewel3g" class="social-link facebook" target="_blank">
         <i class="fab fa-facebook-f"></i>
-        <span class="tooltip">Facebook</span>
+        <span class="tooltip" data-translate="social.facebook">Facebook</span>
       </a>
       <a href="https://www.instagram.com/jewel3g" class="social-link instagram" target="_blank">
         <i class="fab fa-instagram"></i>
-        <span class="tooltip">Instagram</span>
+        <span class="tooltip" data-translate="social.instagram">Instagram</span>
       </a>
       <a href="https://twitter.com/jewel3g" class="social-link twitter" target="_blank">
         <i class="fab fa-twitter"></i>
-        <span class="tooltip">Twitter</span>
+        <span class="tooltip" data-translate="social.twitter">Twitter</span>
       </a>
       <a href="https://www.hackster.io/yourprofile" class="social-link hackster" target="_blank">
         <i class="fab fa-hackerrank"></i>
-        <span class="tooltip">Hackster</span>
+        <span class="tooltip" data-translate="social.hackster">Hackster</span>
       </a>
       <a href="#" class="social-link resume" target="_blank">
         <i class="fas fa-file-pdf"></i>
-        <span class="tooltip">Resume</span>
+        <span class="tooltip" data-translate="social.resume">Resume</span>
       </a>
     </div>
   </div>
@@ -142,13 +134,13 @@
     <!-- About Section -->
     <section id="sectionAbout" class="home-section" aria-label="About">
       <div class="section-heading">
-        <h1>About Me</h1>
+        <h1 data-translate="about.title">About Me</h1>
         <hr>
       </div>
       <div class="containerzz">
         <div class="card" data-aos="fade-up">
-          <p class="card-text">I am a dedicated Embedded Systems Engineer with expertise in developing firmware for microcontrollers, implementing communication protocols, and designing PCBs. With a strong foundation in electrical engineering and a passion for innovation, I enjoy creating solutions that solve real-world problems.</p>
-          <p class="card-text">When I'm not coding or tinkering with hardware, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through technical blogs and workshops.</p>
+          <p class="card-text" data-translate="about.text1">I am a dedicated Embedded Systems Engineer with expertise in developing firmware for microcontrollers, implementing communication protocols, and designing PCBs. With a strong foundation in electrical engineering and a passion for innovation, I enjoy creating solutions that solve real-world problems.</p>
+          <p class="card-text" data-translate="about.text2">When I'm not coding or tinkering with hardware, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through technical blogs and workshops.</p>
         </div>
       </div>
     </section>
@@ -156,320 +148,301 @@
     <!-- Experience -->
     <section id="sectionExperience" class="home-section" aria-label="Experience">
       <div class="section-heading">
-        <h1>Work Experience</h1>
+        <h1 data-translate="experience.title">Work Experience</h1>
         <hr>
       </div>
       <div class="containerzz">
         <!-- Experience Cards -->
         <div class="card" data-aos="fade-up">
-          <h3 class="card-title">Development Engineer Electronics</h3>
-          <p class="card-text"><strong>Company:</strong> Vecoflow GmbH.</p>
-          <p class="card-text"><strong>Duration:</strong> Jan 2021 - Present</p>
-          <p class="card-text"><strong>Responsibilities:</strong></p>
+          <h3 class="card-title" data-translate="experience.job1.title">Development Engineer Electronics</h3>
+          <p class="card-text"><strong data-translate="experience.company">Company:</strong> Vecoflow GmbH.</p>
+          <p class="card-text"><strong data-translate="experience.duration">Duration:</strong> <span data-translate="experience.job1.duration">Jan 2021 - Present</span></p>
+          <p class="card-text"><strong data-translate="experience.responsibilities">Responsibilities:</strong></p>
           <ul>
-            <li>Develop firmware for microcontrollers.</li>
-            <li>Implement communication protocols (UART, SPI, I2C).</li>
-            <li>Design and test PCBs and embedded hardware.</li>
-            <li>Collaborate with hardware teams for integration and debugging.</li>
+            <li data-translate="experience.job1.resp1">Develop firmware for microcontrollers.</li>
+            <li data-translate="experience.job1.resp2">Implement communication protocols (UART, SPI, I2C).</li>
+            <li data-translate="experience.job1.resp3">Design and test PCBs and embedded hardware.</li>
+            <li data-translate="experience.job1.resp4">Collaborate with hardware teams for integration and debugging.</li>
           </ul>
         </div>
 
-
-
-            <!-- Experience Cards -->
+        <!-- Experience Cards -->
         <div class="card" data-aos="fade-up">
-          <h3 class="card-title">Embedded System Engineer</h3>
-          <p class="card-text"><strong>Company:</strong> Solarnative Gmbh.</p>
-          <p class="card-text"><strong>Duration:</strong> Jan 2021 -</p>
-          <p class="card-text"><strong>Responsibilities:</strong></p>
+          <h3 class="card-title" data-translate="experience.job2.title">Embedded System Engineer</h3>
+          <p class="card-text"><strong data-translate="experience.company">Company:</strong> Solarnative Gmbh.</p>
+          <p class="card-text"><strong data-translate="experience.duration">Duration:</strong> <span data-translate="experience.job2.duration">Jan 2021 -</span></p>
+          <p class="card-text"><strong data-translate="experience.responsibilities">Responsibilities:</strong></p>
           <ul>
-            <li>Develop firmware for microcontrollers.</li>
-            <li>Implement communication protocols (UART, SPI, I2C).</li>
-            <li>Design and test PCBs and embedded hardware.</li>
-            <li>Collaborate with hardware teams for integration and debugging.</li>
+            <li data-translate="experience.job2.resp1">Develop firmware for microcontrollers.</li>
+            <li data-translate="experience.job2.resp2">Implement communication protocols (UART, SPI, I2C).</li>
+            <li data-translate="experience.job2.resp3">Design and test PCBs and embedded hardware.</li>
+            <li data-translate="experience.job2.resp4">Collaborate with hardware teams for integration and debugging.</li>
           </ul>
         </div>
 
-
-            <!-- Experience Cards -->
+        <!-- Experience Cards -->
         <div class="card" data-aos="fade-up">
-          <h3 class="card-title">Assiociate Software Engineer </h3>
-          <p class="card-text"><strong>Company:</strong> Robert.</p>
-          <p class="card-text"><strong>Duration:</strong> Jan 2021 -</p>
-          <p class="card-text"><strong>Responsibilities:</strong></p>
+          <h3 class="card-title" data-translate="experience.job3.title">Associate Software Engineer</h3>
+          <p class="card-text"><strong data-translate="experience.company">Company:</strong> Robert.</p>
+          <p class="card-text"><strong data-translate="experience.duration">Duration:</strong> <span data-translate="experience.job3.duration">Jan 2021 -</span></p>
+          <p class="card-text"><strong data-translate="experience.responsibilities">Responsibilities:</strong></p>
           <ul>
-            <li>Develop firmware for microcontrollers.</li>
-            <li>Implement communication protocols (UART, SPI, I2C).</li>
-            <li>Design and test PCBs and embedded hardware.</li>
-            <li>Collaborate with hardware teams for integration and debugging.</li>
+            <li data-translate="experience.job3.resp1">Develop firmware for microcontrollers.</li>
+            <li data-translate="experience.job3.resp2">Implement communication protocols (UART, SPI, I2C).</li>
+            <li data-translate="experience.job3.resp3">Design and test PCBs and embedded hardware.</li>
+            <li data-translate="experience.job3.resp4">Collaborate with hardware teams for integration and debugging.</li>
           </ul>
         </div>
-
-   
-
-
       </div>
     </section>
 
     <!-- Education -->
     <section id="sectionEducation" class="home-section" aria-label="Education">
       <div class="section-heading">
-        <h1>Education</h1>
+        <h1 data-translate="education.title">Education</h1>
         <hr>
       </div>
       <div class="containerzz">
         <!-- Education Cards -->
         <div class="card" data-aos="fade-up">
-          <h3 class="card-title">B.Sc in Electrical & Electronics Engineering</h3>
-          <p class="card-text"><strong>University:</strong> Daffodil International University</p>
-          <p class="card-text"><strong>Duration:</strong> 2015 - 2019</p>
-          <p class="card-text"><strong>Project:</strong> Smart Carparking System Using</p>
+          <h3 class="card-title" data-translate="education.degree1.title">B.Sc in Electrical & Electronics Engineering</h3>
+          <p class="card-text"><strong data-translate="education.university">University:</strong> Daffodil International University</p>
+          <p class="card-text"><strong data-translate="education.duration">Duration:</strong> <span data-translate="education.degree1.duration">2015 - 2019</span></p>
+          <p class="card-text"><strong data-translate="education.project">Project:</strong> <span data-translate="education.degree1.project">Smart Carparking System Using</span></p>
         </div>
         
         <div class="card" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="card-title">Diploma in Electrical Engineering</h3>
-          <p class="card-text"><strong>Institute:</strong>Chittagong Ploytechnic Institute</p>
-          <p class="card-text"><strong>Duration:</strong> 2009 - 2014</p>
-          <p class="card-text"><strong>Project:</strong> MPPT Solar Inverter</p>
+          <h3 class="card-title" data-translate="education.degree2.title">Diploma in Electrical Engineering</h3>
+          <p class="card-text"><strong data-translate="education.institute">Institute:</strong> Chittagong Polytechnic Institute</p>
+          <p class="card-text"><strong data-translate="education.duration">Duration:</strong> <span data-translate="education.degree2.duration">2009 - 2014</span></p>
+          <p class="card-text"><strong data-translate="education.project">Project:</strong> <span data-translate="education.degree2.project">MPPT Solar Inverter</span></p>
         </div>
       </div>
     </section>
 
-   
-<!-- Skills -->
-<section id="sectionSkills" class="home-section" aria-label="Skills">
-  <div class="section-heading">
-    <h1>Technical Skills</h1>
-    <hr>
-  </div>
-  <div class="containerzz skills-grid">
-
-    <!-- 1. Programming & Embedded Systems -->
-    <div class="skill-card" data-aos="fade-up">
-      <div class="skill-header">
-        <i class="fas fa-code"></i>
-        <h3>Programming & Embedded</h3>
-      </div>
-      <div class="skill-tags">
-        <span class="skill-tag">C/C++</span>
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">Raspberry PI</span>
-        <span class="skill-tag">ARM Cortex-M</span>
-        <span class="skill-tag">AVR</span>
-        <span class="skill-tag">ESP32</span>
-        <span class="skill-tag">Arduino</span>
-        <span class="skill-tag">RTOS</span>
-      </div>
-    </div>
-
-    <!-- 2. Hardware & Tools -->
-    <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-      <div class="skill-header">
-        <i class="fas fa-microchip"></i>
-        <h3>Hardware & Tools</h3>
-      </div>
-      <div class="skill-tags">
-        <span class="skill-tag">Altium Designer</span>
-        <span class="skill-tag">KiCad</span>
-        <span class="skill-tag">Eagle</span>
-        <span class="skill-tag">Oscilloscope</span>
-        <span class="skill-tag">Logic Analyzer</span>
-        <span class="skill-tag">Soldering</span>
-        <span class="skill-tag">Multimeter</span>
-        <span class="skill-tag">Power Supply</span>
-      </div>
-    </div>
-
-    <!-- 3. PCB & Circuit Design -->
-    <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
-      <div class="skill-header">
-        <i class="fas fa-project-diagram"></i>
-        <h3>PCB & Circuit Design</h3>
-      </div>
-      <div class="skill-tags">
-        <span class="skill-tag">Analog Circuit Design</span>
-        <span class="skill-tag">Digital Circuit Design</span>
-        <span class="skill-tag">High-Speed PCB</span>
-        <span class="skill-tag">Signal Integrity</span>
-        <span class="skill-tag">Power Distribution</span>
-        <span class="skill-tag">EMC/EMI Compliance</span>
-      </div>
-    </div>
-
-    <!-- 4. Power Electronics -->
-    <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
-      <div class="skill-header">
-        <i class="fas fa-bolt"></i>
-        <h3>Power Electronics</h3>
-      </div>
-      <div class="skill-tags">
-        <span class="skill-tag">DC-DC Converters</span>
-        <span class="skill-tag">Inverters</span>
-        <span class="skill-tag">AC-DC Rectifiers</span>
-        <span class="skill-tag">Motor Drives (BLDC, PMSM)</span>
-        <span class="skill-tag">FOC Control</span>
-        <span class="skill-tag">Battery Management</span>
-      </div>
-    </div>
-
-    <!-- 5. System Design & IoT -->
-    <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
-      <div class="skill-header">
-        <i class="fas fa-network-wired"></i>
-        <h3>System Design & IoT</h3>
-      </div>
-      <div class="skill-tags">
-        <span class="skill-tag">System Architecture</span>
-        <span class="skill-tag">IoT Protocols (MQTT, HTTP, LoRa)</span>
-        <span class="skill-tag">Cloud Platforms (Arduino IoT, Adafruit, Blynk, AWS IoT)</span>
-        <span class="skill-tag">Communication (CAN, SPI, I²C, UART)</span>
-      </div>
-    </div>
-
-    <!-- 6. Simulation & Analysis -->
-    <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
-      <div class="skill-header">
-        <i class="fas fa-laptop-code"></i>
-        <h3>Simulation & Analysis</h3>
-      </div>
-      <div class="skill-tags">
-        <span class="skill-tag">MATLAB/Simulink</span>
-        <span class="skill-tag">LTspice</span>
-        <span class="skill-tag">PLECS</span>
-        <span class="skill-tag">PSIM</span>
-        <span class="skill-tag">Proteus</span>
-        <span class="skill-tag">Multisim</span>
-      </div>
-    </div>
-
-    <!-- 7. Testing & Measurement -->
-    <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
-      <div class="skill-header">
-        <i class="fas fa-vial"></i>
-        <h3>Testing & Measurement</h3>
-      </div>
-      <div class="skill-tags">
-        <span class="skill-tag">EMI/EMC Testing</span>
-        <span class="skill-tag">Power Analyzer</span>
-        <span class="skill-tag">Thermal Camera</span>
-        <span class="skill-tag">Debugging & Validation</span>
-        <span class="skill-tag">Safety Standards (DO-178, DO-254, ISO 26262)</span>
-      </div>
-    </div>
-
-   <div class="skill-card" data-aos="fade-up" data-aos-delay="800">
-  <div class="skill-header">
-    <i class="fas fa-robot"></i>
-    <h3>Robotics & Automation</h3>
-  </div>
-  <div class="skill-tags">
-    <span class="skill-tag">Arduino Robotics</span>
-    <span class="skill-tag">ESP32/STM32 Robot Control</span>
-    <span class="skill-tag">Servo & Stepper Motors</span>
-    <span class="skill-tag">Sensor Integration (Ultrasonic, IR, LIDAR)</span>
-    <span class="skill-tag">Robotic Arm Programming</span>
-    <span class="skill-tag">Line Following & Obstacle Avoidance</span>
-   
-  </div>
-</div>
-
-  </div>
-</section>
-
-
-
-
-
-
-    <!-- Education -->
-    <section id="sectionEducation" class="home-section" aria-label="Education">
+    <!-- Skills -->
+    <section id="sectionSkills" class="home-section" aria-label="Skills">
       <div class="section-heading">
-        <h1>Projects</h1>
+        <h1 data-translate="skills.title">Technical Skills</h1>
         <hr>
       </div>
-      <div class="containerzz">
-        <!-- Education Cards -->
-        <div class="card" data-aos="fade-up">
-          <h3 class="card-title">MARS Rover</h3>
-          <p class="card-text"><strong>University:</strong> Daffodil International University</p>
-          <p class="card-text"><strong>Duration:</strong> 2015 - 2019</p>
-          <p class="card-text"><strong>Project:</strong> Smart Carparking System Using</p>
+      <div class="containerzz skills-grid">
+
+        <!-- 1. Programming & Embedded Systems -->
+        <div class="skill-card" data-aos="fade-up">
+          <div class="skill-header">
+            <i class="fas fa-code"></i>
+            <h3 data-translate="skills.category1">Programming & Embedded</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">C/C++</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Raspberry PI</span>
+            <span class="skill-tag">ARM Cortex-M</span>
+            <span class="skill-tag">AVR</span>
+            <span class="skill-tag">ESP32</span>
+            <span class="skill-tag">Arduino</span>
+            <span class="skill-tag">RTOS</span>
+          </div>
         </div>
-        
-        <div class="card" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="card-title">Robotic Arm</h3>
-          <p class="card-text"><strong>Institute:</strong>Chittagong Ploytechnic Institute</p>
-          <p class="card-text"><strong>Duration:</strong> 2009 - 2014</p>
-          <p class="card-text"><strong>Project:</strong> MPPT Solar Inverter</p>
+
+        <!-- 2. Hardware & Tools -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-header">
+            <i class="fas fa-microchip"></i>
+            <h3 data-translate="skills.category2">Hardware & Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Altium Designer</span>
+            <span class="skill-tag">KiCad</span>
+            <span class="skill-tag">Eagle</span>
+            <span class="skill-tag">Oscilloscope</span>
+            <span class="skill-tag">Logic Analyzer</span>
+            <span class="skill-tag">Soldering</span>
+            <span class="skill-tag">Multimeter</span>
+            <span class="skill-tag">Power Supply</span>
+          </div>
+        </div>
+
+        <!-- 3. PCB & Circuit Design -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-header">
+            <i class="fas fa-project-diagram"></i>
+            <h3 data-translate="skills.category3">PCB & Circuit Design</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Analog Circuit Design</span>
+            <span class="skill-tag">Digital Circuit Design</span>
+            <span class="skill-tag">High-Speed PCB</span>
+            <span class="skill-tag">Signal Integrity</span>
+            <span class="skill-tag">Power Distribution</span>
+            <span class="skill-tag">EMC/EMI Compliance</span>
+          </div>
+        </div>
+
+        <!-- 4. Power Electronics -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-header">
+            <i class="fas fa-bolt"></i>
+            <h3 data-translate="skills.category4">Power Electronics</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">DC-DC Converters</span>
+            <span class="skill-tag">Inverters</span>
+            <span class="skill-tag">AC-DC Rectifiers</span>
+            <span class="skill-tag">Motor Drives (BLDC, PMSM)</span>
+            <span class="skill-tag">FOC Control</span>
+            <span class="skill-tag">Battery Management</span>
+          </div>
+        </div>
+
+        <!-- 5. System Design & IoT -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="skill-header">
+            <i class="fas fa-network-wired"></i>
+            <h3 data-translate="skills.category5">System Design & IoT</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">System Architecture</span>
+            <span class="skill-tag">IoT Protocols (MQTT, HTTP, LoRa)</span>
+            <span class="skill-tag">Cloud Platforms (Arduino IoT, Adafruit, Blynk, AWS IoT)</span>
+            <span class="skill-tag">Communication (CAN, SPI, I²C, UART)</span>
+          </div>
+        </div>
+
+        <!-- 6. Simulation & Analysis -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="skill-header">
+            <i class="fas fa-laptop-code"></i>
+            <h3 data-translate="skills.category6">Simulation & Analysis</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MATLAB/Simulink</span>
+            <span class="skill-tag">LTspice</span>
+            <span class="skill-tag">PLECS</span>
+            <span class="skill-tag">PSIM</span>
+            <span class="skill-tag">Proteus</span>
+            <span class="skill-tag">Multisim</span>
+          </div>
+        </div>
+
+        <!-- 7. Testing & Measurement -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="skill-header">
+            <i class="fas fa-vial"></i>
+            <h3 data-translate="skills.category7">Testing & Measurement</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">EMI/EMC Testing</span>
+            <span class="skill-tag">Power Analyzer</span>
+            <span class="skill-tag">Thermal Camera</span>
+            <span class="skill-tag">Debugging & Validation</span>
+            <span class="skill-tag">Safety Standards (DO-178, DO-254, ISO 26262)</span>
+          </div>
+        </div>
+
+        <!-- 8. Robotics & Automation -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="800">
+          <div class="skill-header">
+            <i class="fas fa-robot"></i>
+            <h3 data-translate="skills.category8">Robotics & Automation</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Arduino Robotics</span>
+            <span class="skill-tag">ESP32/STM32 Robot Control</span>
+            <span class="skill-tag">Servo & Stepper Motors</span>
+            <span class="skill-tag">Sensor Integration (Ultrasonic, IR, LIDAR)</span>
+            <span class="skill-tag">Robotic Arm Programming</span>
+            <span class="skill-tag">Line Following & Obstacle Avoidance</span>
+          </div>
         </div>
       </div>
     </section>
 
-
-
-
-
-
-
+    <!-- Projects -->
+    <section id="sectionProjects" class="home-section" aria-label="Projects">
+      <div class="section-heading">
+        <h1 data-translate="projects.title">Projects</h1>
+        <hr>
+      </div>
+      <div class="containerzz">
+        <!-- Project Cards -->
+        <div class="card" data-aos="fade-up">
+          <h3 class="card-title" data-translate="projects.project1.title">MARS Rover</h3>
+          <p class="card-text"><strong data-translate="projects.university">University:</strong> Daffodil International University</p>
+          <p class="card-text"><strong data-translate="projects.duration">Duration:</strong> <span data-translate="projects.project1.duration">2015 - 2019</span></p>
+          <p class="card-text"><strong data-translate="projects.description">Project:</strong> <span data-translate="projects.project1.description">Smart Carparking System Using</span></p>
+        </div>
+        
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="card-title" data-translate="projects.project2.title">Robotic Arm</h3>
+          <p class="card-text"><strong data-translate="projects.institute">Institute:</strong> Chittagong Polytechnic Institute</p>
+          <p class="card-text"><strong data-translate="projects.duration">Duration:</strong> <span data-translate="projects.project2.duration">2009 - 2014</span></p>
+          <p class="card-text"><strong data-translate="projects.description">Project:</strong> <span data-translate="projects.project2.description">MPPT Solar Inverter</span></p>
+        </div>
+      </div>
+    </section>
 
     <!-- Certifications -->
     <section id="sectionCertifications" class="home-section" aria-label="Certifications">
       <div class="section-heading">
-        <h1>Certifications</h1>
+        <h1 data-translate="certifications.title">Certifications</h1>
         <hr>
       </div>
       <div class="containerzz">
         <!-- Certification cards -->
         <div class="card" data-aos="fade-up">
-          <h3 class="card-title">Master Class on Internet of Things</h3>
-          <p class="card-text"><strong>Issuer:</strong> Bangladesh Skills Development Institute</p>
-          <p class="card-text"><strong>Date:</strong> March 2021</p>
-            <p class="card-text"><strong>Location</strong> Dhaka, Bangladesh</p>
-          <p class="card-text">Comprehensive course covering embedded systems design, real-time operating systems, and hardware-software co-design.</p>
+          <h3 class="card-title" data-translate="certifications.cert1.title">Master Class on Internet of Things</h3>
+          <p class="card-text"><strong data-translate="certifications.issuer">Issuer:</strong> Bangladesh Skills Development Institute</p>
+          <p class="card-text"><strong data-translate="certifications.date">Date:</strong> <span data-translate="certifications.cert1.date">March 2021</span></p>
+          <p class="card-text"><strong data-translate="certifications.location">Location:</strong> <span data-translate="certifications.cert1.location">Dhaka, Bangladesh</span></p>
+          <p class="card-text" data-translate="certifications.cert1.description">Comprehensive course covering embedded systems design, real-time operating systems, and hardware-software co-design.</p>
         </div>
 
- <div class="card" data-aos="fade-up">
-          <h3 class="card-title">Techfest 2018</h3>
-          <p class="card-text"><strong>Issuer:</strong> Bangladesh Skills Development Institute</p>
-          <p class="card-text"><strong>Date:</strong> March 2021</p>
-            <p class="card-text"><strong>Location</strong> Dhaka, Bangladesh</p>
-          <p class="card-text">Comprehensive course covering embedded systems design, real-time operating systems, and hardware-software co-design.</p>
+        <div class="card" data-aos="fade-up">
+          <h3 class="card-title" data-translate="certifications.cert2.title">Techfest 2018</h3>
+          <p class="card-text"><strong data-translate="certifications.issuer">Issuer:</strong> Bangladesh Skills Development Institute</p>
+          <p class="card-text"><strong data-translate="certifications.date">Date:</strong> <span data-translate="certifications.cert2.date">March 2021</span></p>
+          <p class="card-text"><strong data-translate="certifications.location">Location:</strong> <span data-translate="certifications.cert2.location">Dhaka, Bangladesh</span></p>
+          <p class="card-text" data-translate="certifications.cert2.description">Comprehensive course covering embedded systems design, real-time operating systems, and hardware-software co-design.</p>
         </div>
 
-            <div class="card" data-aos="fade-up">
-          <h3 class="card-title">Techfest 2018</h3>
-          <p class="card-text"><strong>Issuer:</strong> IIT, Bombay</p>
-          <p class="card-text"><strong>Date:</strong> March 2021</p>
-            <p class="card-text"><strong>Location</strong> Bombay, India</p>
-          <p class="card-text">Comprehensive course covering embedded systems design, real-time operating systems, and hardware-software co-design.</p>
+        <div class="card" data-aos="fade-up">
+          <h3 class="card-title" data-translate="certifications.cert3.title">Techfest 2018</h3>
+          <p class="card-text"><strong data-translate="certifications.issuer">Issuer:</strong> IIT, Bombay</p>
+          <p class="card-text"><strong data-translate="certifications.date">Date:</strong> <span data-translate="certifications.cert3.date">March 2021</span></p>
+          <p class="card-text"><strong data-translate="certifications.location">Location:</strong> <span data-translate="certifications.cert3.location">Bombay, India</span></p>
+          <p class="card-text" data-translate="certifications.cert3.description">Comprehensive course covering embedded systems design, real-time operating systems, and hardware-software co-design.</p>
         </div>
         
         <div class="card" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="card-title">IEEE SS12 2018 Competition</h3>
-          <p class="card-text"><strong>Issuer:</strong> IEEE Region 10</p>
-          <p class="card-text"><strong>Date:</strong> November 2020</p>
-           <p class="card-text"><strong>Location</strong>Colombo, Sri Lanka</p>
-          <p class="card-text">  -----------   </p>
+          <h3 class="card-title" data-translate="certifications.cert4.title">IEEE SS12 2018 Competition</h3>
+          <p class="card-text"><strong data-translate="certifications.issuer">Issuer:</strong> IEEE Region 10</p>
+          <p class="card-text"><strong data-translate="certifications.date">Date:</strong> <span data-translate="certifications.cert4.date">November 2020</span></p>
+          <p class="card-text"><strong data-translate="certifications.location">Location:</strong> <span data-translate="certifications.cert4.location">Colombo, Sri Lanka</span></p>
+          <p class="card-text" data-translate="certifications.cert4.description">Participated in the prestigious IEEE competition showcasing technical skills.</p>
         </div>
 
-          <div class="card" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="card-title">IEEE YESIST12 Competition</h3>
-          <p class="card-text"><strong>Issuer:</strong> IEEE Region 10</p>
-          <p class="card-text"><strong>Date:</strong> November 2020</p>
-           <p class="card-text"><strong>Location</strong> Bangkok,Thailand </p>
-          <p class="card-text">---------/p>
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="card-title" data-translate="certifications.cert5.title">IEEE YESIST12 Competition</h3>
+          <p class="card-text"><strong data-translate="certifications.issuer">Issuer:</strong> IEEE Region 10</p>
+          <p class="card-text"><strong data-translate="certifications.date">Date:</strong> <span data-translate="certifications.cert5.date">November 2020</span></p>
+          <p class="card-text"><strong data-translate="certifications.location">Location:</strong> <span data-translate="certifications.cert5.location">Bangkok, Thailand</span></p>
+          <p class="card-text" data-translate="certifications.cert5.description">Competed in the YESIST12 innovation challenge.</p>
         </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="card-title">NASA Space App Challenge 2018</h3>
-          <p class="card-text"><strong>Issuer:</strong> Udacity</p>
-          <p class="card-text"><strong>Date:</strong> November 2020</p>
-          <p class="card-text">---------/p>
+        
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="card-title" data-translate="certifications.cert6.title">NASA Space App Challenge 2018</h3>
+          <p class="card-text"><strong data-translate="certifications.issuer">Issuer:</strong> NASA</p>
+          <p class="card-text"><strong data-translate="certifications.date">Date:</strong> <span data-translate="certifications.cert6.date">October 2018</span></p>
+          <p class="card-text" data-translate="certifications.cert6.description">Participated in the global hackathon addressing real-world problems.</p>
         </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="card-title">NASA Space App Challenge 2019</h3>
-          <p class="card-text"><strong>Issuer:</strong> Udacity</p>
-          <p class="card-text"><strong>Date:</strong> November 2020</p>
-          <p class="card-text">---------/p>
+        
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="card-title" data-translate="certifications.cert7.title">NASA Space App Challenge 2019</h3>
+          <p class="card-text"><strong data-translate="certifications.issuer">Issuer:</strong> NASA</p>
+          <p class="card-text"><strong data-translate="certifications.date">Date:</strong> <span data-translate="certifications.cert7.date">October 2019</span></p>
+          <p class="card-text" data-translate="certifications.cert7.description">Participated in the global hackathon addressing real-world problems.</p>
         </div>
       </div>
     </section>
@@ -477,14 +450,14 @@
     <!-- Contact Section -->
     <section id="sectionContact" class="home-section" aria-label="Contact">
       <div class="section-heading">
-        <h1>Contact Me</h1>
+        <h1 data-translate="contact.title">Contact Me</h1>
         <hr>
       </div>
       <div class="containerzz">
         <div class="card" data-aos="fade-up">
-          <p class="card-text">I'm always interested in new challenges and opportunities. Feel free to reach out if you'd like to discuss a project or just say hello!</p>
-          <p class="card-text"><strong>Email:</strong> contact@example.com</p>
-          <p class="card-text"><strong>Location:</strong> Munich, Germany</p>
+          <p class="card-text" data-translate="contact.description">I'm always interested in new challenges and opportunities. Feel free to reach out if you'd like to discuss a project or just say hello!</p>
+          <p class="card-text"><strong data-translate="contact.email">Email:</strong> contact@example.com</p>
+          <p class="card-text"><strong data-translate="contact.location">Location:</strong> Munich, Germany</p>
           <div class="social-links" style="justify-content: flex-start; margin-top: 1.5rem;">
             <a href="https://www.linkedin.com/in/yourprofile" class="social-link linkedin" target="_blank">
               <i class="fab fa-linkedin-in"></i>
@@ -503,8 +476,8 @@
     <!-- Quote -->
     <section class="quoteComponent" aria-label="Inspirational Quote">
       <blockquote class="zitat1">
-        <span id="quotePageElement">Everything's always ending. But everything's always beginning, too.</span>
-        <cite id="quoteSource"><i>- Patrick Ness</i></cite>
+        <span id="quotePageElement" data-translate="quote.text">Everything's always ending. But everything's always beginning, too.</span>
+        <cite id="quoteSource"><i data-translate="quote.author">- Patrick Ness</i></cite>
       </blockquote>
     </section>
   </main>
@@ -517,12 +490,12 @@
       <a href="https://wa.me/4917631152823" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
       <a href="https://www.hackster.io/yourprofile" target="_blank" aria-label="Hackster"><i class="fab fa-hackerrank"></i></a>
     </div>
-    <p>&copy; <span id="currentYear"></span> MD Anaet Ullah. All rights reserved.</p>
+    <p>&copy; <span id="currentYear"></span> MD Anaet Ullah. <span data-translate="footer.rights">All rights reserved.</span></p>
   </footer>
   
   <!-- Scripts placed before closing body for better performance -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="script.js"></script>
-  <script>
+  <script src="scripts.js"></script>
+  <script>  
