@@ -492,21 +492,54 @@
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="scripts.js"></script>
 	
-	<script>
-    const navToggle = document.getElementById("nav-toggle");
-    const navMenu = document.getElementById("nav-menu");
+  <script>
+        const navToggle = document.getElementById("nav-toggle");
+        const navMenu = document.getElementById("nav-menu");
+        const notification = document.getElementById("notification");
 
-    // Toggle menu on hamburger click
-    navToggle.addEventListener("click", () => {
-      navMenu.classList.toggle("show");
-    });
+        // Toggle menu on hamburger click
+        navToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
 
-    // Auto-close menu when clicking language button
-    document.querySelectorAll(".lang-btn").forEach(btn => {
-      btn.addEventListener("click", () => {
-        navMenu.classList.remove("show");
-      });
-    });
+        // Auto-close menu when clicking language button
+        document.querySelectorAll(".lang-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                navMenu.classList.remove("show");
+                showNotification();
+            });
+        });
+        
+        // Auto-close menu when clicking any nav link
+        document.querySelectorAll("#nav-menu a").forEach(link => {
+            link.addEventListener("click", () => {
+                navMenu.classList.remove("show");
+                showNotification();
+            });
+        });
+        
+        // Function to show notification
+        function showNotification() {
+            notification.classList.add("show");
+            setTimeout(() => {
+                notification.classList.remove("show");
+            }, 2000);
+        }
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            });
+        });
     </script>
 <script>
     let lastScrollTop = 0;
