@@ -13,8 +13,8 @@ const translations = {
     // Hero section
     "hero.title": "Embedded Systems Engineer",
     "hero.description": "Passionate about creating innovative embedded solutions and IoT systems that bridge the gap between hardware and software.",
-    "hero.cta1": "Get In Touch",
-    "hero.cta2": "View Projects",
+    "hero.cta1": "View Projects",
+    "hero.cta2": "View Resume",
     
     // Social media
     "social.email": "Email",
@@ -151,8 +151,8 @@ const translations = {
     // Hero section
     "hero.title": "Embedded Systems Ingenieur",
     "hero.description": "Leidenschaftlich über die Erstellung innovativer Embedded-Lösungen und IoT-Systeme, die die Lücke zwischen Hardware und Software schließen.",
-    "hero.cta1": "Kontakt aufnehmen",
-    "hero.cta2": "Projekte ansehen",
+    "hero.cta1": "Projekte ansehen",
+    "hero.cta2": "Lebenslauf ansehen",
     
     // Social media
     "social.email": "E-Mail",
@@ -287,10 +287,10 @@ const translations = {
     "nav.contact": "যোগাযোগ",
     
     // Hero section
-    "hero.title": "এম্বেডেড সিস্টেমস ইঞ্জিনিয়ার",
+    "hero.title": "এম্বেডেড সিস্টেম ইঞ্জিনিয়ার",
     "hero.description": "ইনোভেটিভ এম্বেডেড সমাধান এবং IoT সিস্টেম তৈরি করতে আগ্রহী যা হার্ডওয়্যার এবং সফ্টওয়্যারের মধ্যে ব্যবধান পূরণ করে।",
-    "hero.cta1": "যোগাযোগ করুন",
-    "hero.cta2": "প্রকল্প দেখুন",
+    "hero.cta1": "প্রকল্প দেখুন",
+    "hero.cta2": "জীবনবৃত্তান্ত দেখুন",
     
     // Social media
     "social.email": "ইমেইল",
