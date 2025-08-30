@@ -82,8 +82,7 @@ const translations = {
     
     // Projects section
     "projects.title": "Projects",
-    "projects.university": "University:",
-    "projects.institute": "Institute:",
+
     "projects.duration": "Duration:",
     "projects.description": "Project:",
     "projects.project1.title": "",
@@ -531,3 +530,4 @@ function scrollToTop() {
   });
 
 }
+
