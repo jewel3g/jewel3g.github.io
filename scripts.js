@@ -86,12 +86,12 @@ const translations = {
     "projects.institute": "Institute:",
     "projects.duration": "Duration:",
     "projects.description": "Project:",
-    "projects.project1.title": "MARS Rover",
+    "projects.project1.title": "",
     "projects.project1.duration": "2015 - 2019",
-    "projects.project1.description": "Smart Carparking System Using",
-    "projects.project2.title": "Robotic Arm",
+    "projects.project1.description": "",
+    "projects.project2.title": "R",
     "projects.project2.duration": "2009 - 2014",
-    "projects.project2.description": "MPPT Solar Inverter",
+    "projects.project2.description": "",
     
     // Certifications section
     "certifications.title": "Certifications",
@@ -530,3 +530,4 @@ function scrollToTop() {
     behavior: 'smooth'
   });
 }
+
