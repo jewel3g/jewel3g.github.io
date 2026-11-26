@@ -49,3 +49,11 @@ Open to electronics hardware and embedded engineering opportunities.
 ## Engineering case studies
 
 [Professional and independent hardware engineering case studies](docs/engineering-case-studies.md): aerospace electronics, DAQ, power electronics, FPGA, CM5 carrier, DDR, PMIC, display interfaces, Linux bring-up and EMC.
+
+## Engineering resources
+
+- [Recruiter guide](docs/recruiter-guide.md)
+- [Hardware development workflow](docs/hardware-development-workflow.md)
+- [Hardware validation and EMC methodology](docs/hardware-validation-emc.md)
+- [IMAX95 design review](https://github.com/jewel3g/FlexSoC/blob/main/docs/design-review.md)
+- [IMAX95 interface matrix](https://github.com/jewel3g/FlexSoC/blob/main/docs/interface-matrix.md)
