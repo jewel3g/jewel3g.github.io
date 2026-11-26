@@ -45,3 +45,7 @@ Germany-based electronics engineer focused on aerospace electronics, mixed-signa
 Static HTML/CSS/JavaScript portfolio hosted on GitHub Pages. Open index.html locally to preview. Engineering descriptions are presented in English and German; legacy navigation supports English, German and Bangla.
 
 Open to electronics hardware and embedded engineering opportunities.
+
+## Engineering case studies
+
+[Professional and independent hardware engineering case studies](docs/engineering-case-studies.md): aerospace electronics, DAQ, power electronics, FPGA, CM5 carrier, DDR, PMIC, display interfaces, Linux bring-up and EMC.
