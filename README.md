@@ -57,3 +57,15 @@ Open to electronics hardware and embedded engineering opportunities.
 - [Hardware validation and EMC methodology](docs/hardware-validation-emc.md)
 - [IMAX95 design review](https://github.com/jewel3g/FlexSoC/blob/main/docs/design-review.md)
 - [IMAX95 interface matrix](https://github.com/jewel3g/FlexSoC/blob/main/docs/interface-matrix.md)
+
+## Technical portfolio navigation
+
+| Engineering discipline | Repository and evidence focus |
+|---|---|
+| Embedded Linux and hardware architecture | [FlexSoC](https://github.com/jewel3g/FlexSoC): design gates, DDR, power sequencing and board bring-up planning |
+| Hardware verification | [PCB Test Automation](https://github.com/jewel3g/PCB-Test-Automation-with-Python): fixture design and measurement traceability |
+| Firmware verification | [Automated Firmware Testing](https://github.com/jewel3g/Automated-Firmware-Testing): serial regression and fault handling |
+| Measurement and DSP | [Signal Processing](https://github.com/jewel3g/Signal-Processing-Analysis): reproducible spectral analysis methodology |
+| Power electronics | [MPPT Solar Inverter](https://github.com/jewel3g/MPPT_Solar_Inverter): proposed control and bench validation |
+
+Project documentation distinguishes design intent, implementation and verified results. Public repositories are independent portfolio material, not employer-owned work or evidence of certification.
